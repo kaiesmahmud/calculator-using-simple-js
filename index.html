@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE-edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Calculator with simple JS</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+<body>
+<!-- header section--->
+    <header> 
+        <h1>Calculator</h1>
+        <h3>This is a simple calculator,made with html,css & raw js  ! </h3> 
+    </header>
+<!-- main calculator section-->
+    <section class="container">
+        <div class="calculator-body">
+            <input type="submit"  id="Inputext"  >
+            <button  onclick="allClear()" class="span-two ac" >AC</button>
+            <button onclick="del()"  class="del" >DEL</button>
+
+                    <button onclick="calculate('/')" 
+                    class="operator">÷</button>
+
+            <button onclick="calculate(7)" >7</button>
+            <button onclick="calculate(8)">8</button>
+            <button onclick="calculate(9)"> 9</button>
+
+                    <button onclick="calculate('*')" 
+                    class="operator">×</button>
+
+            <button onclick="calculate(4)">4</button>
+            <button onclick="calculate(5)">5</button>
+            <button onclick="calculate(6)">6</button>
+
+                    <button onclick="calculate('-')" 
+                    class="operator">-</button>
+
+            <button onclick="calculate(1)">1</button>
+            <button onclick="calculate(2)">2</button>
+            <button onclick="calculate(3)">3</button>
+
+                    <button onclick="calculate('+')" 
+                    class="operator">+</button>
+
+            <button onclick="calculate('.')" >.</button>
+            <button onclick="calculate(0)" >0</button>
+
+            <button accesskey="Enter" onclick="totalResult()" 
+            class="span-two equal">=</button>
+        </div>
+    </section>
+<!-- footer section-->
+    <footer>KaiesMahmudNehal©2021,october
+        <br>[ NOTE : TEXT is not selectable ! ]  
+    </footer>
+<!-- JavaScript file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

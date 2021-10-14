@@ -1,0 +1,99 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: sans-serif;
+    background-color: cornsilk;
+    user-select: none;
+}
+header{
+    margin: 50px;
+    padding:10px  20px ;
+    border-left: 10px solid lightseagreen;
+    /* user-select: none; for not select the text */
+}
+header h1{
+    color:midnightblue;
+    
+}
+header h3{
+    font-family:cursive;
+    opacity: 0.7;
+    color:lightslategrey;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex ;
+    align-items: center ;
+    justify-content: center ;
+    
+}
+.calculator-body{
+    display: grid ;
+    grid-template-columns: repeat(4,100px);
+    grid-template-rows: 120px repeat(5,100px);
+    border: 5px solid salmon;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: whitesmoke;
+}
+.span-two{
+    grid-column: span 2; 
+}
+
+input{
+    grid-column: span 4;
+    margin: 5px ;
+    font-size: 3em;
+    border-radius: 10px;
+    outline:none;
+    border: 2px solid white;
+    box-shadow: inset  -6px -6px 15px rgb(187, 184, 184);
+    background-color:white;
+    text-align:end;
+    color: lightslategray;
+    font-weight: bolder;
+    cursor: pointer;
+    word-wrap: normal;
+}
+button{
+    font-size: 2em;
+    border-radius:50%;
+    border: 2px solid white;
+    box-shadow: 6px 6px 15px rgb(185, 184, 184);
+    margin:5px;
+    background-color:white;
+    cursor: pointer;
+}
+button:last-child {
+    border-radius: 25px;
+}
+.equal:hover{
+    color: white;
+    background-color:lightgreen;
+}
+button:hover{
+    color:white ;
+    background-color: lightsalmon;
+}
+.ac{
+    border-radius: 25px;
+}
+.ac:hover{
+    background-color: rgb(247, 124, 142);
+}
+.del:hover{
+    background-color: rgb(243, 71, 97);
+}
+.operator:hover{
+    background-color: lightskyblue;
+}
+footer{
+    border-top: 5px solid yellowgreen;
+    text-align: center;
+    color: gray;
+    padding: 20px;
+    line-height:35px;
+}
